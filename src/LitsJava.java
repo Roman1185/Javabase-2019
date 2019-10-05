@@ -1,14 +1,24 @@
 import java.util.Random;
 public class LitsJava {
     public static void main(String[] args) {
-        var a = 0;
-        for(int i =1;i<=15;i++) {
-            if (i % 2 == 0) {
-                a = a + i;
+        var a = new Random().nextInt(3000);
+            System.out.println(a);
+            if(a%3==0){
+                System.out.println("div on 3");
+            }
+            else if(a%5==0){
+                System.out.println("div on 5");
+            }
+            else if(a%7==0){
+
+            }
+            else {
+                System.out.println("doesnt div");
             }
         }
-            System.out.println(a);
+
+
         }
-    }
+
 
 

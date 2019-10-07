@@ -36,3 +36,22 @@ public class LitsJava {
 
 
         }
+
+
+
+//Task#5
+import java.util.Random;
+public class LitsJava {
+    public static void main(String[] args) {
+        var a = new Random().nextInt(3000);
+        var sum = 0;
+        var c = 1;
+        while (c <= 15) {
+            sum= a + sum;
+            c++;
+        }
+        var medium=sum/15;
+            System.out.println(sum);
+        System.out.println(medium);
+        }
+    }

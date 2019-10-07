@@ -1,7 +1,32 @@
 import java.util.Random;
 public class LitsJava {
     public static void main(String[] args) {
-        var a = new Random().nextInt(3000);
+        var random = new Random().nextInt(500);
+        var a = 1;
+        var b = 0;
+        while (a <= 50) {
+            a++;
+            if (random % 7 == 0) {
+                System.out.println(random);
+                b = b + random;
+            }
+            random = new Random().nextInt(500);
+        }
+        System.out.println("сума "+b);
+        }
+    }
+
+
+
+
+        /*var random = new Random();
+        for(int i=0;i<=10;i++){
+            char c=(char)(random.nextInt(26)+'a');
+            System.out.println(c);
+        }
+    }
+    }
+        /*var a = new Random().nextInt(3000);
         var sum = 0;
         var c = 1;
         while (c <= 15) {
